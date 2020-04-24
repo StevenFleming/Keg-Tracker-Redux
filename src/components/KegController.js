@@ -36,6 +36,8 @@ class KegController extends React.Component {
       pints: 124,
       tapped: false,
       masterKegList: masterKegList,
+      selectedKeg: null,
+      formVisibleOnPage: true,
     };
   }
 
@@ -48,6 +50,18 @@ class KegController extends React.Component {
       </React.Fragment>
     );
   }
+
+  handleChangingSelectedKeg = (id) => {
+    const selectedKeg = this.state.masterKegList.filter(
+      (keg) => keg.id === id
+    )[0];
+    this.setState({
+      selectedKeg: selectedKeg,
+      formVisibleOnPage: false,
+    });
+    console.log("Details selected! ", id);
+  };
+
   handleAddingNewKegToList = (newKeg) => {
     const newMasterKegList = this.state.masterKegList.concat(newKeg);
     this.setState({

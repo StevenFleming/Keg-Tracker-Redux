@@ -9,15 +9,16 @@ function NewKeg(props) {
     event.preventDefault();
 
     props.submitNewKeg({
-      // name: event.target.name.value,
-      // brand: event.target.name.value,
+      name: event.target.name.value,
+      brand: event.target.name.value,
       type: event.target.type.value,
       cost: parseInt(event.target.cost.value),
-      // pint: parseInt(event.target.pint.value),
+      pints: parseInt(event.target.pints.value),
       tapped: isBool(event.target.tapped.value),
       id: v4(),
     });
   }
+
   function isBool(string) {
     if (string === "true") {
       return true;
@@ -33,6 +34,7 @@ function NewKeg(props) {
       <form onSubmit={submitNewKeg}>
         <label htmlFor="type">What Type of Keg is it?</label>
         <br />
+        <br />
         <select name="type">
           <option value="IPA">IPA</option>
           <option value="Stout">Stout</option>
@@ -40,17 +42,32 @@ function NewKeg(props) {
           <option value="Brown Ale">Brown Ale</option>
         </select>
         <br />
+        <br />
 
         <label htmlFor="tapped">Is this Keg tapped</label>
         <br />
         <select name="tapped">
+          <option value="false">No</option>
           <option value="true">Yes</option>
-          <option value="false">False</option>
         </select>
         <br />
+        <br />
 
+        <label hmtlfor="name"> What is the Name of this Keg</label>
+        <input type="text" id="name" name="name"></input>
+        <br />
+        <br />
+        <label hmtlfor="brand"> What Brand is this Keg</label>
+        <input type="text" id="brand" name="brand"></input>
+        <br />
+        <br />
         <label hmtlfor="cost"> What is the cost of this Keg</label>
         <input type="text" id="cost" name="cost"></input>
+        <br />
+        <br />
+        <label hmtlfor="pints"> How many Pints is this Keg Holding</label>
+        <input type="text" id="pints" name="pints"></input>
+        <br />
         <br />
 
         <button type="submit">Submit Keg </button>

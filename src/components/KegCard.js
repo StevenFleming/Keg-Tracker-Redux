@@ -10,6 +10,7 @@ function KegCard(props) {
       <p>Type: {props.selectedKeg.type}</p>
       <p>Cost: {props.selectedKeg.cost}</p>
       <p>Pints Left:{props.selectedKeg.pints}</p>
+      <p>ID : {props.selectedKeg.id}</p>
       <p>This Keg Tapped: {props.selectedKeg.tapped.toString()}</p>
     </React.Fragment>
   );
