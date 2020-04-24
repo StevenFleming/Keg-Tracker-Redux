@@ -1,10 +1,10 @@
 <div align=center>
 
-# Orca Watch
+# Keg Tracker
 
-#### React Fundamentals Exercise for [Epicodus](https://www.epicodus.com/), 04.24.2020
+#### React Keg Tracker, [Epicodus](https://www.epicodus.com/), 04.24.2020
 
-#### By **Adela Darmansyah, Steven Fleming, Jack Dunning**
+#### By Steven Fleming
 
 [About](#About) | [Screenshots](#Screenshots) | [Bugs](#Known-Bugs) | [Technologies](#Technologies-Used) | [Contact](#Support-and-Contact-Details)
 
