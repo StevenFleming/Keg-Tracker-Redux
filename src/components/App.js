@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+// import KegController from "./components/KegController";
+import Header from "./Header";
 
 function App() {
   return (
     <React.Fragment>
       <Header />
-      <KegController />
+      {/* <KegController /> */}
     </React.Fragment>
   );
 }

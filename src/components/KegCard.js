@@ -1,11 +1,13 @@
-function KegCard(props) {
-  return (
-    <React.Fragment>
-      <h3>KegCard</h3>
-    </React.Fragment>
-  );
-}
+// import React from "react";
 
-KegCard.propTypes = {};
+// function KegCard(props) {
+//   return (
+//     <React.Fragment>
+//       <h3>KegCard</h3>
+//     </React.Fragment>
+//   );
+// }
 
-export default KegCard;
+// KegCard.propTypes = {};
+
+// export default KegCard;

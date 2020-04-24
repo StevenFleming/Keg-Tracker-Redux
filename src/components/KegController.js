@@ -1,9 +1,9 @@
 import React from "react";
-import KegData from "./KegData";
-import KegList from "./KegList";
-import NewKegForm from "./NewKegForm";
+// import KegData from "./KegData";
+// import KegList from "./KegList";
+// import NewKegForm from "./NewKegForm";
 
-class App extends React.Component {
+class KegController extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -12,12 +12,12 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <KegData />
+        {/* <KegData />
         <NewKegForm />
-        <KegList />
+        <KegList /> */}
       </React.Fragment>
     );
   }
 }
 
-export default App;
+export default KegController;
