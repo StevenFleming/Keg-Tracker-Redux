@@ -1,15 +1,14 @@
 import React from "react";
-import KegCard from "./KegCard";
 import PropTypes from "prop-types";
 
-function KegList(props) {
+function KegData(props) {
   return (
     <React.Fragment>
-      <KegCard />
+      <h2>Info and Stats</h2>
     </React.Fragment>
   );
 }
 
-KegList.propTypes = {};
+KegData.propTypes = {};
 
-export default KegList;
+export default KegData;
