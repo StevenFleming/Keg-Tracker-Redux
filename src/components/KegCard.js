@@ -5,12 +5,12 @@ function KegCard(props) {
   return (
     <React.Fragment>
       <h3>KegCard</h3>
-      <p>{props.selectedKeg.name}</p>
-      <p>{props.selectedKeg.brand}</p>
-      <p>{props.selectedKeg.type}</p>
-      <p>{props.selectedKeg.cost}</p>
-      <p>{props.selectedKeg.pints}</p>
-      <p>{props.selectedKeg.tapped.toString()}</p>
+      <p>Name: {props.selectedKeg.name}</p>
+      <p>Brand:{props.selectedKeg.brand}</p>
+      <p>Type: {props.selectedKeg.type}</p>
+      <p>Cost: {props.selectedKeg.cost}</p>
+      <p>Pints Left:{props.selectedKeg.pints}</p>
+      <p>This Keg Tapped: {props.selectedKeg.tapped.toString()}</p>
     </React.Fragment>
   );
 }
