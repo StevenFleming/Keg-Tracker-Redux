@@ -8,7 +8,7 @@
 
 [About](#About) | [Screenshots](#Screenshots) | [Bugs](#Known-Bugs) | [Technologies](#Technologies-Used) | [Contact](#Support-and-Contact-Details)
 
-![GitHub](https://img.shields.io/github/license/ayohana/orca-watch?color=%23DE98B2&style=for-the-badge) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/ayohana/orca-watch/master?color=%23DE98B2&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/ayohana/orca-watch?color=%23DE98B2&style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/ayohana/orca-watch?color=%23DE98B2&style=for-the-badge)
+<!-- ![GitHub](https://img.shields.io/github/license/ayohana/orca-watch?color=%23DE98B2&style=for-the-badge) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/ayohana/orca-watch/master?color=%23DE98B2&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/ayohana/orca-watch?color=%23DE98B2&style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/ayohana/orca-watch?color=%23DE98B2&style=for-the-badge) -->
 
 </div>
 
