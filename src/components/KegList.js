@@ -6,7 +6,10 @@ function KegList(props) {
   return (
     <React.Fragment>
       {props.masterKegList.map((keg, i) => (
-        <KegCard selectedKeg={props.masterKegList[i]} />
+        <KegCard
+          selectedKeg={props.masterKegList[i]}
+          selectKeg={props.selectKeg}
+        />
       ))}
     </React.Fragment>
   );

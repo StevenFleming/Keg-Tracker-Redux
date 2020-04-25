@@ -12,6 +12,9 @@ function KegCard(props) {
       <p>Pints Left:{props.selectedKeg.pints}</p>
       <p>ID : {props.selectedKeg.id}</p>
       <p>This Keg Tapped: {props.selectedKeg.tapped.toString()}</p>
+      <button onClick={() => props.selectKeg(props.selectedKeg.id)}>
+        Details
+      </button>
     </React.Fragment>
   );
 }

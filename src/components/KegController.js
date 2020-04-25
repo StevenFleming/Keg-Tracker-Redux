@@ -2,6 +2,7 @@ import React from "react";
 import KegData from "./KegData";
 import KegList from "./KegList";
 import NewKeg from "./NewKeg";
+import KegDetails from "./KegDetails";
 
 const masterKegList = [
   {
@@ -42,10 +43,20 @@ class KegController extends React.Component {
   }
 
   render() {
+    // conditional Rendering Logic
+
+    let currentVisibleState = <KegData KegData={this.state.masterKegList} />;
+    if (this.state.selectedKeg != null) {
+      currentVisibleState = <KegDetails Keg={this.state.selectedKeg} />;
+    }
+
     return (
       <React.Fragment>
-        <KegList masterKegList={this.state.masterKegList} />
-        <KegData KegData={this.state.masterKegList} />
+        {currentVisibleState}
+        <KegList
+          masterKegList={this.state.masterKegList}
+          selectKeg={this.handleChangingSelectedKeg}
+        />
         <NewKeg submitNewKeg={this.handleAddingNewKegToList} />
       </React.Fragment>
     );
@@ -59,7 +70,7 @@ class KegController extends React.Component {
       selectedKeg: selectedKeg,
       formVisibleOnPage: false,
     });
-    console.log("Details selected! ", id);
+    console.log("Details selected! ", selectedKeg);
   };
 
   handleAddingNewKegToList = (newKeg) => {
