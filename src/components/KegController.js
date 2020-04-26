@@ -59,6 +59,7 @@ class KegController extends React.Component {
           <KegList
             masterKegList={this.state.masterKegList}
             selectKeg={this.handleChangingSelectedKeg}
+            delete={this.handleDeletingKeg}
           />
         </div>
         <div id="body3">
@@ -67,6 +68,16 @@ class KegController extends React.Component {
       </React.Fragment>
     );
   }
+
+  handleDeletingKeg = (id) => {
+    const newMasterKegList = this.state.masterKegList.filter(
+      (keg) => keg.id !== id
+    );
+    this.setState({
+      masterKegList: newMasterKegList,
+      selectedTicket: null,
+    });
+  };
 
   handleChangingSelectedKeg = (id) => {
     const selectedKeg = this.state.masterKegList.filter(

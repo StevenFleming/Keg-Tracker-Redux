@@ -17,6 +17,9 @@ function KegCard(props) {
       <button onClick={() => props.pourABeer(props.selectedKeg.id)}>
         Pour a Beer
       </button>
+      <button onClick={() => props.delete(props.selectedKeg.id)}>
+        Delete Keg
+      </button>
     </React.Fragment>
   );
 }

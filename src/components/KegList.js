@@ -10,6 +10,7 @@ function KegList(props) {
           selectedKeg={props.masterKegList[i]}
           selectKeg={props.selectKeg}
           pourABeer={props.pourABeer}
+          delete={props.delete}
         />
       ))}
     </React.Fragment>
