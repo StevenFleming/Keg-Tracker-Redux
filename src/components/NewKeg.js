@@ -65,7 +65,7 @@ function NewKeg(props) {
         <input type="text" id="cost" name="cost"></input>
         <br />
         <br />
-        <label hmtlfor="pints"> How many Pints is this Keg Holding</label>
+        <label hmtlfor="pints"> How many pints does this Keg Hold</label>
         <input type="text" id="pints" name="pints"></input>
         <br />
         <br />
