@@ -45,19 +45,25 @@ class KegController extends React.Component {
   render() {
     // conditional Rendering Logic
 
-    let currentVisibleState = <KegData KegData={this.state.masterKegList} />;
+    let currentVisibleState = (
+      <KegData masterKegList={this.state.masterKegList} />
+    );
     if (this.state.selectedKeg != null) {
       currentVisibleState = <KegDetails Keg={this.state.selectedKeg} />;
     }
 
     return (
       <React.Fragment>
-        {currentVisibleState}
-        <KegList
-          masterKegList={this.state.masterKegList}
-          selectKeg={this.handleChangingSelectedKeg}
-        />
-        <NewKeg submitNewKeg={this.handleAddingNewKegToList} />
+        <div id="body1">{currentVisibleState}</div>
+        <div id="body2">
+          <KegList
+            masterKegList={this.state.masterKegList}
+            selectKeg={this.handleChangingSelectedKeg}
+          />
+        </div>
+        <div id="body3">
+          <NewKeg submitNewKeg={this.handleAddingNewKegToList} />
+        </div>
       </React.Fragment>
     );
   }
@@ -72,6 +78,16 @@ class KegController extends React.Component {
     });
     console.log("Details selected! ", selectedKeg);
   };
+
+  // pourABeer = (id) => {
+  //   const pintsLeft =
+  //     this.state.masterKegList.filter((keg) => keg.id === id)[0].pints - 1;
+
+  //   this.setState({
+  //     selectKeg,
+  //   });
+  //   console.log(selectedKeg.pints);
+  // };
 
   handleAddingNewKegToList = (newKeg) => {
     const newMasterKegList = this.state.masterKegList.concat(newKeg);

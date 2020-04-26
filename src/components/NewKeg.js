@@ -10,7 +10,7 @@ function NewKeg(props) {
 
     props.submitNewKeg({
       name: event.target.name.value,
-      brand: event.target.name.value,
+      brand: event.target.brand.value,
       type: event.target.type.value,
       cost: parseInt(event.target.cost.value),
       pints: parseInt(event.target.pints.value),
@@ -70,7 +70,9 @@ function NewKeg(props) {
         <br />
         <br />
 
-        <button type="submit">Submit Keg </button>
+        <button class="button" type="submit">
+          Submit Keg{" "}
+        </button>
       </form>
     </React.Fragment>
   );

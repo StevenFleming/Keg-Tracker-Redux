@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #441322;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* @font-face {
+  font-family: "Roboto";
+  src: url("../Roboto/Roboto-Regular.ttf");
+  src: url("../Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../Comfortaa/Comfortaa-VariableFont_wght.ttf");
+  src: url("../Comfortaa/static/Comfortaa-Bold.ttf");
+} */
+
+:root {
+  --content-padding: 10px;
+}
+
+body {
+  font-family: "Times New Roman", sans-serif;
+}
+
+button {
+  padding: 10px;
+  font-family: "Times New Roman", cursive;
+  font-weight: 400;
+  font-size: 12pt;
+  color: #03104f;
+  border-radius: 10px;
+  border: #03104f solid 2px;
+  margin: 0 1%;
+}
+
+button:hover {
+  border: #3b357c solid 2px;
+  box-shadow: 2px 3px #3a3a3a;
+  padding: 11px;
+}
+
+select {
+  font-family: "Times New Roman", cursive;
+  color: #03104f;
+  border-radius: 5px;
+  border: #03104f solid 2px;
+  margin-top: 1%;
+}
+
+a {
+  color: #03104f;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+#content {
+  column-count: 3;
+}
+
+#body1 {
+  column-count: 1;
+  column-width: 400px;
+}
+
+#body2 {
+  column-count: 2;
+  column-width: 400px;
+}
+
+#body3 {
+  column-count: 1;
+  column-width: 400px;
+}
+
+#header {
+  columns: 1;
+  text-align: center;
+}
+
+.radioButton {
+  margin-top: 1%;
+  margin-right: 3%;
+}

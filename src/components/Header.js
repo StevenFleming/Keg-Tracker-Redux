@@ -4,7 +4,9 @@ import PropTypes from "prop-types";
 function Header(props) {
   return (
     <React.Fragment>
-      <h1> Keg Tracker</h1>
+      <div id="header">
+        <h1> Keg Tracker</h1>
+      </div>
     </React.Fragment>
   );
 }

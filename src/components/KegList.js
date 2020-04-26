@@ -9,6 +9,7 @@ function KegList(props) {
         <KegCard
           selectedKeg={props.masterKegList[i]}
           selectKeg={props.selectKeg}
+          pourABeer={props.pourABeer}
         />
       ))}
     </React.Fragment>
@@ -17,6 +18,7 @@ function KegList(props) {
 
 KegList.propTypes = {
   masterKegList: PropTypes.array,
+  selectKeg: PropTypes.func,
 };
 
 export default KegList;
