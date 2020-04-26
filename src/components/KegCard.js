@@ -14,9 +14,9 @@ function KegCard(props) {
       <button onClick={() => props.selectKeg(props.selectedKeg.id)}>
         Details
       </button>
-      <button onClick={() => props.pourABeer(props.selectedKeg.id)}>
+      {/* <button onClick={() => props.pourABeer(props.selectedKeg.id)}>
         Pour a Beer
-      </button>
+      </button> */}
       <button onClick={() => props.delete(props.selectedKeg.id)}>
         Delete Keg
       </button>
@@ -25,6 +25,10 @@ function KegCard(props) {
 }
 
 KegCard.propTypes = {
+  selectedKeg: PropTypes.func,
+  pourABeer: PropTypes.func,
+  delete: PropTypes.func,
+
   name: PropTypes.string,
   brand: PropTypes.string,
   type: PropTypes.string,

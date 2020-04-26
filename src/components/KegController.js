@@ -3,6 +3,7 @@ import KegData from "./KegData";
 import KegList from "./KegList";
 import NewKeg from "./NewKeg";
 import KegDetails from "./KegDetails";
+import ReusableForm from "./ReusableForm";
 
 const masterKegList = [
   {

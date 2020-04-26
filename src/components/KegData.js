@@ -14,10 +14,44 @@ function KegData(props) {
           pintsSum(props.masterKegList).toPrecision(1)}
         {" $ "}
       </p>
+      <p>Total Kegs: {totalKegs(props.masterKegList)}</p>
+      <p>Taped Kegs: {tappedKegs(props.masterKegList)} </p>
+      <p>Untapped Kegs: {untappedKegs(props.masterKegList)}</p>
 
-      <p>IPA's on draft: {totalIPAs(props.masterKegList)}</p>
+      <p>IPAs on draft: {totalType(props.masterKegList, "IPA")}</p>
+      <p>Stouts on draft:{totalType(props.masterKegList, "Stout")}</p>
+      <p> Pilsners on draft:{totalType(props.masterKegList, "Pilsner")}</p>
+      <p> Brown Ales on draft:{totalType(props.masterKegList, "Brown Ale")}</p>
     </React.Fragment>
   );
+}
+
+function totalKegs(arr) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    count++;
+  }
+  return count;
+}
+
+function untappedKegs(arr) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].tapped == false) {
+      count++;
+    }
+  }
+  return count;
+}
+
+function tappedKegs(arr) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].tapped == true) {
+      count++;
+    }
+  }
+  return count;
 }
 
 function pintsSum(arr) {
@@ -38,25 +72,15 @@ function totalCost(arr) {
   return count;
 }
 
-function totalIPAs(arr) {
+function totalType(arr, type) {
   let count = 0;
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].type === "IPA") {
+    if (arr[i].type === type) {
       count++;
     }
   }
   return count;
 }
-
-// function totalType(arr, type) {
-//   let count = 0;
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i].type === type) {
-//       count++;
-//     }
-//   }
-//   return count;
-// }
 
 KegData.propTypes = {
   masterKegList: PropTypes.array,

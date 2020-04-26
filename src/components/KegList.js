@@ -9,7 +9,7 @@ function KegList(props) {
         <KegCard
           selectedKeg={props.masterKegList[i]}
           selectKeg={props.selectKeg}
-          pourABeer={props.pourABeer}
+          // pourABeer={props.pourABeer}
           delete={props.delete}
         />
       ))}
@@ -19,7 +19,10 @@ function KegList(props) {
 
 KegList.propTypes = {
   masterKegList: PropTypes.array,
+  selectedKeg: PropTypes.object,
   selectKeg: PropTypes.func,
+  pourABeer: PropTypes.func,
+  delete: PropTypes.func,
 };
 
 export default KegList;
