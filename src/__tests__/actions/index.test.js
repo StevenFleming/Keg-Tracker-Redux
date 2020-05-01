@@ -53,9 +53,7 @@ describe("kegReducer", () => {
       tapped: tapped,
       id: id
     };
-
     expect(action.type).toEqual(c.NEW_KEG)
-
   });
 
   test("should correctly add new kegData to masterKegList", () => {
@@ -102,54 +100,3 @@ describe("kegReducer", () => {
     });
   });
 });
-
-
-
-
-
-
-
-
-
-//   // needs to return an updated masterKegList without the keg with the specified ID
-//   describe("deleteKeg", () => {
-//     const currentState = {
-//       1: {
-//         name: "Space Dust IPA",
-//         brand: "Elysian",
-//         style: "IPA",
-//         cost: 184,
-//         pints: 124,
-//         tapped: false,
-//         id: 1
-//       },
-
-
-//       2: {
-//         name: "Piny the Elder",
-//         brand: "Russian River Brewing",
-//         style: "IPA",
-//         cost: 204,
-//         pints: 124,
-//         tapped: false,
-//         id: 2
-//       },
-//     }
-
-    // it("should correctly delete a keg", () => {
-    //   const action = {
-    //     type: c.DELETE_KEG,
-    //     id: 1
-    //   };
-    //   expect(a.deleteKeg(currentState, action)).toEqual({
-    //     2: {
-    //       name: "Piny the Elder",
-    //       brand: "Russian River Brewing",
-    //       style: "IPA",
-    //       cost: 204,
-    //       pints: 124,
-    //       tapped: false,
-    //       id: 2
-    //     }
-    //   });
-    // });
