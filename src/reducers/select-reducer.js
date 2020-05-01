@@ -4,7 +4,7 @@ const masterKegList = [
   {
     name: "Space Dust IPA",
     brand: "Elysian",
-    type: "IPA",
+    style: "IPA",
     cost: 184,
     pints: 124,
     tapped: false,
@@ -14,7 +14,7 @@ const masterKegList = [
   {
     name: "Piny the Elder",
     brand: "Russian River Brewing",
-    type: "IPA",
+    style: "IPA",
     cost: 204,
     pints: 124,
     tapped: false,

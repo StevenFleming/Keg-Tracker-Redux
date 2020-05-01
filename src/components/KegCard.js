@@ -7,7 +7,7 @@ function KegCard(props) {
       <h3>KegCard</h3>
       <p>Name: {props.selectedKeg.name}</p>
       <p>Brand:{props.selectedKeg.brand}</p>
-      <p>Type: {props.selectedKeg.type}</p>
+      <p>Style: {props.selectedKeg.style}</p>
       <p>Cost: {props.selectedKeg.cost}</p>
       <p>Pints Left:{props.selectedKeg.pints}</p>
       <p>This Keg Tapped: {props.selectedKeg.tapped.toString()}</p>
@@ -31,7 +31,7 @@ KegCard.propTypes = {
 
   name: PropTypes.string,
   brand: PropTypes.string,
-  type: PropTypes.string,
+  style: PropTypes.string,
   cost: PropTypes.number,
   pints: PropTypes.number,
   tapped: PropTypes.bool,

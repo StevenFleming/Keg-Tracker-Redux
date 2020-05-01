@@ -18,10 +18,10 @@ function KegData(props) {
       <p>Taped Kegs: {tappedKegs(props.masterKegList)} </p>
       <p>Untapped Kegs: {untappedKegs(props.masterKegList)}</p>
 
-      <p>IPAs on draft: {totalType(props.masterKegList, "IPA")}</p>
-      <p>Stouts on draft:{totalType(props.masterKegList, "Stout")}</p>
-      <p> Pilsners on draft:{totalType(props.masterKegList, "Pilsner")}</p>
-      <p> Brown Ales on draft:{totalType(props.masterKegList, "Brown Ale")}</p>
+      <p>IPAs on draft: {totalStyle(props.masterKegList, "IPA")}</p>
+      <p>Stouts on draft:{totalStyle(props.masterKegList, "Stout")}</p>
+      <p> Pilsners on draft:{totalStyle(props.masterKegList, "Pilsner")}</p>
+      <p> Brown Ales on draft:{totalStyle(props.masterKegList, "Brown Ale")}</p>
     </React.Fragment>
   );
 }
@@ -72,10 +72,10 @@ function totalCost(arr) {
   return count;
 }
 
-function totalType(arr, type) {
+function totalStyle(arr, style) {
   let count = 0;
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].type === type) {
+    if (arr[i].style === style) {
       count++;
     }
   }

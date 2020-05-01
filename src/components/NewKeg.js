@@ -11,7 +11,7 @@ function NewKeg(props) {
     props.submitNewKeg({
       name: event.target.name.value,
       brand: event.target.brand.value,
-      type: event.target.type.value,
+      style: event.target.style.value,
       cost: parseInt(event.target.cost.value),
       pints: parseInt(event.target.pints.value),
       tapped: isBool(event.target.tapped.value),
@@ -32,10 +32,10 @@ function NewKeg(props) {
       <h2>Add a New Keg</h2>
       <hr />
       <form onSubmit={submitNewKeg}>
-        <label htmlFor="type">What Type of Keg is it?</label>
+        <label htmlFor="style">What style of Keg is it?</label>
         <br />
         <br />
-        <select name="type">
+        <select name="style">
           <option value="IPA">IPA</option>
           <option value="Stout">Stout</option>
           <option value="Pislner">Pislner</option>

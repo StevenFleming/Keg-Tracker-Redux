@@ -4,12 +4,12 @@ import * as c from "../actions/ActionTypes";
 export default (state = {}, action) => {
   switch (action.type) {
     case 'NEW_KEG':
-      const { name, brand, type, cost, pints, tapped, id } = action;
+      const { name, brand, style, cost, pints, tapped, id } = action;
       return Object.assign({}, state, {
         [id]: {
           name: name,
           brand: brand,
-          type: type,
+          style: style,
           cost: cost,
           pints: pints,
           tapped: tapped,

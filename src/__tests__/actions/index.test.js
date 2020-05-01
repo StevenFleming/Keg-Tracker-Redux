@@ -10,7 +10,7 @@ describe("kegReducer", () => {
   const kegData = {
     name: "Space Dust IPA",
     brand: "Elysian",
-    type: "IPA",
+    style: "IPA",
     cost: 184,
     pints: 124,
     tapped: false,
@@ -22,12 +22,12 @@ describe("kegReducer", () => {
   });
 
   test("should correctly add new kegData to masterKegList", () => {
-    const { name, brand, type, cost, pints, tapped, id } = kegData;
+    const { name, brand, style, cost, pints, tapped, id } = kegData;
     action = {
       type: 'NEW_KEG',
       name: name,
       brand: brand,
-      type: type,
+      style: style,
       cost: cost,
       pints: pints,
       tapped: tapped,
@@ -37,12 +37,12 @@ describe("kegReducer", () => {
     expect(action.type).toEqual(c.NEW_KEG)
 
     // test("should correctly add new kegData to masterKegList", () => {
-    //   const { name, brand, type, cost, pints, tapped, id } = kegData;
+    //   const { name, brand, style, cost, pints, tapped, id } = kegData;
     //   action = {
-    //     type: 'NEW_KEG',
+    //     style: 'NEW_KEG',
     //     name: name,
     //     brand: brand,
-    //     type: type,
+    //     style: style,
     //     cost: cost,
     //     pints: pints,
     //     tapped: tapped,
@@ -53,7 +53,7 @@ describe("kegReducer", () => {
     //     [id]: {
     //       name: name,
     //       brand: brand,
-    //       type: type,
+    //       style: style,
     //       cost: cost,
     //       pints: pints,
     //       tapped: tapped,
@@ -66,12 +66,12 @@ describe("kegReducer", () => {
 
 
 // test("should correctly add new kegData to masterKegList", () => {
-//   const { name, brand, type, cost, pints, tapped, id } = kegData;
+//   const { name, brand, style, cost, pints, tapped, id } = kegData;
 //   action = {
 //     type: c.NEW_KEG,
 //     name: name,
 //     brand: brand,
-//     type: type,
+//     style: style,
 //     cost: cost,
 //     pints: pints,
 //     tapped: tapped,
@@ -83,7 +83,7 @@ describe("kegReducer", () => {
 //     [id]: {
 //       name: name,
 //       brand: brand,
-//       type: type,
+//       style: style,
 //       cost: cost,
 //       pints: pints,
 //       tapped: tapped,
@@ -101,7 +101,7 @@ describe("kegReducer", () => {
 //       1: {
 //         name: "Space Dust IPA",
 //         brand: "Elysian",
-//         type: "IPA",
+//         style: "IPA",
 //         cost: 184,
 //         pints: 124,
 //         tapped: false,
@@ -112,7 +112,7 @@ describe("kegReducer", () => {
 //       2: {
 //         name: "Piny the Elder",
 //         brand: "Russian River Brewing",
-//         type: "IPA",
+//         style: "IPA",
 //         cost: 204,
 //         pints: 124,
 //         tapped: false,
@@ -129,7 +129,7 @@ describe("kegReducer", () => {
 //     //     2: {
 //     //       name: "Piny the Elder",
 //     //       brand: "Russian River Brewing",
-//     //       type: "IPA",
+//     //       style: "IPA",
 //     //       cost: 204,
 //     //       pints: 124,
 //     //       tapped: false,
@@ -143,6 +143,6 @@ describe("kegReducer", () => {
 // //needs to return the object with the corresponding id from the masterKegList
 // describe("selectKeg", () => {
 //   it("should correctly create a selectKeg action", () => {
-//     expect(a.newKeg("fakeId1")).toEqual({ type: c.SELECT_KEG, payload: Keg });
+//     expect(a.newKeg("fakeId1")).toEqual({ style: c.SELECT_KEG, payload: Keg });
 //   });
 // });

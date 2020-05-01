@@ -9,7 +9,7 @@ function KegDetails(props) {
       <h2>Keg Details</h2>
       <p>Name: {props.Keg.name}</p>
       <p>Brand:{props.Keg.brand}</p>
-      <p>Type: {props.Keg.type}</p>
+      <p>style: {props.Keg.style}</p>
       <p>Cost: {props.Keg.cost}</p>
       <p>Pints Left:{props.Keg.pints}</p>
       <p>Cost per Pint:{props.Keg.cost / props.Keg.pints} </p>
@@ -22,7 +22,7 @@ function KegDetails(props) {
 KegDetails.propTypes = {
   name: PropTypes.string,
   brand: PropTypes.string,
-  type: PropTypes.string,
+  style: PropTypes.string,
   cost: PropTypes.number,
   pints: PropTypes.number,
   id: PropTypes.string,

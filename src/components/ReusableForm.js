@@ -5,10 +5,10 @@ function ReusableForm(props) {
   return (
     <React.Fragment>
       <form onSubmit={props.submitNewKeg}>
-        <label htmlFor="type">What Type of Keg is it?</label>
+        <label htmlFor="style">What style of Keg is it?</label>
         <br />
         <br />
-        <select name="type">
+        <select name="style">
           <option value="IPA">IPA</option>
           <option value="Stout">Stout</option>
           <option value="Pislner">Pislner</option>
