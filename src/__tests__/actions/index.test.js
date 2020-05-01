@@ -21,7 +21,7 @@ describe("kegReducer", () => {
     expect(kegReducer({}, { type: null })).toEqual({});
   });
 
-  test("should correctly add new kegData to masterKegList", () => {
+  test("should correctly return the type property", () => {
     const { name, brand, style, cost, pints, tapped, id } = kegData;
     action = {
       type: 'NEW_KEG',
@@ -36,31 +36,32 @@ describe("kegReducer", () => {
 
     expect(action.type).toEqual(c.NEW_KEG)
 
-    // test("should correctly add new kegData to masterKegList", () => {
-    //   const { name, brand, style, cost, pints, tapped, id } = kegData;
-    //   action = {
-    //     style: 'NEW_KEG',
-    //     name: name,
-    //     brand: brand,
-    //     style: style,
-    //     cost: cost,
-    //     pints: pints,
-    //     tapped: tapped,
-    //     id: id
-    //   };
+  });
 
-    //   expect(kegReducer({}, action)).toEqual({
-    //     [id]: {
-    //       name: name,
-    //       brand: brand,
-    //       style: style,
-    //       cost: cost,
-    //       pints: pints,
-    //       tapped: tapped,
-    //       id: id
-    //     },
-    //   });
-    // });
+  test("should correctly add new kegData to masterKegList", () => {
+    const { name, brand, style, cost, pints, tapped, id } = kegData;
+    action = {
+      type: 'NEW_KEG',
+      name: name,
+      brand: brand,
+      style: style,
+      cost: cost,
+      pints: pints,
+      tapped: tapped,
+      id: id
+    };
+
+    expect(kegReducer({}, action)).toEqual({
+      [id]: {
+        name: name,
+        brand: brand,
+        style: style,
+        cost: cost,
+        pints: pints,
+        tapped: tapped,
+        id: id
+      },
+    });
   });
 });
 
