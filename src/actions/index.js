@@ -1,16 +1,15 @@
-import * as a from "./ActionTypes";
+// import * as a from "./ActionTypes";
 
-export const newKeg = (keg) => ({
-  type: a.NEW_KEG,
-  payload: keg,
-});
+// export const newKeg = (keg) => ({
+//   type: a.NEW_KEG,
+//   payload: keg,
+// });
 
-export const deleteKeg = (id) => ({
-  type: a.DELETE_KEG,
-  payload: {}
-});
+// export const deleteKeg = (id) => ({
+//   type: a.DELETE_KEG,
+// });
 
-export const selectKeg = (id) => ({
-  type: a.SELECT_KEG,
-  payload: selectedkeg,
-})
+// export const selectKeg = (id) => ({
+//   type: a.SELECT_KEG,
+//   payload: selectedkeg,
+// })

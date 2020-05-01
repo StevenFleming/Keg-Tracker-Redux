@@ -1,8 +1,9 @@
 import * as c from "../actions/ActionTypes";
 
+
 export default (state = {}, action) => {
   switch (action.type) {
-    case c.NEW_KEG:
+    case 'NEW_KEG':
       const { name, brand, type, cost, pints, tapped, id } = action;
       return Object.assign({}, state, {
         [id]: {
@@ -15,10 +16,24 @@ export default (state = {}, action) => {
           id: id
         }
       });
+    case c.DELETE_KEG:
+      const newState = { ...state };
+      delete newState[id]
+      return newState;
     default:
       return state;
   }
 };
+
+// [id]: {
+//   name: name,
+//     brand: brand,
+//       type: type,
+//         cost: cost,
+//           pints: pints,
+//             tapped: tapped,
+//               id: id
+// }
 
 //const masterKegList = [
 
