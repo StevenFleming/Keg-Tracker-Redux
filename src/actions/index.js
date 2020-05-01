@@ -7,9 +7,10 @@ export const newKeg = (keg) => ({
 
 export const deleteKeg = (id) => ({
   type: a.DELETE_KEG,
+  payload: {}
 });
 
-export const selectKEg = (id) => ({
+export const selectKeg = (id) => ({
   type: a.SELECT_KEG,
   payload: selectedkeg,
 })
