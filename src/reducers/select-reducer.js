@@ -25,7 +25,6 @@ const masterKegList = [
 export default (state = masterKegList, action) => {
   switch (action.type) {
     case c.SELECT_KEG:
-      return action.payload;
     default:
       return state;
   }
