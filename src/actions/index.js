@@ -7,10 +7,25 @@ export const newKeg = (keg) => ({
 
 export const deleteKeg = (id) => ({
   type: a.DELETE_KEG,
-  payload: id,
+  id: id,
 });
 
 export const selectKeg = (selectedkeg) => ({
   type: a.SELECT_KEG,
   payload: selectedkeg,
 })
+export const deselectKeg = () => ({
+  type: a.DESELECT_KEG,
+  payload: null,
+})
+
+export const toggleForm = () => ({
+  type: a.TOGGLE_FORM,
+  payload: true,
+})
+
+export const deselectForm = () => ({
+  type: a.deleteKeg,
+  payload: null,
+})
+

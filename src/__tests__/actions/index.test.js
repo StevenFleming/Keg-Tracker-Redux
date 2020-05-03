@@ -1,7 +1,7 @@
 import * as a from "../../actions";
 import * as c from "../../actions/ActionTypes";
 import kegReducer from "../../reducers/keg-reducer";
-
+import * as actions from './../../actions'
 
 
 describe("kegReducer", () => {
@@ -97,6 +97,13 @@ describe("kegReducer", () => {
         tapped: false,
         id: 2,
       }
+    });
+  });
+
+  test('Should successfully delete a ticket', () => {
+    expect(actions.deleteKeg(3)).toEqual({
+      type: 'DELETE_KEG',
+      id: 3
     });
   });
 });
