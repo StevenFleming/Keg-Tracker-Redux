@@ -25,15 +25,5 @@ export default (state = {}, action) => {
   }
 };
 
-// [id]: {
-//   name: name,
-//     brand: brand,
-//       type: type,
-//         cost: cost,
-//           pints: pints,
-//             tapped: tapped,
-//               id: id
-// }
 
-//const masterKegList = [
 
